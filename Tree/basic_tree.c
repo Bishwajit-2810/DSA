@@ -51,8 +51,8 @@ void post_order(struct node *root)
         return;
     }
 
-    pre_order(root->left);
-    pre_order(root->right);
+    post_order(root->left);
+    post_order(root->right);
     printf("%d ", root->data);
 }
 
@@ -62,9 +62,9 @@ void in_order(struct node *root)
     {
         return;
     }
-    pre_order(root->left);
+    in_order(root->left);
     printf("%d ", root->data);
-    pre_order(root->right);
+    in_order(root->right);
 }
 int max(int a, int b)
 {
