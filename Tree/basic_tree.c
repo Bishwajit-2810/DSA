@@ -31,6 +31,7 @@ struct node *crt_tree()
     newnode->left = crt_tree();
     printf("right node of %d\n", t_data);
     newnode->right = crt_tree();
+    return newnode;
 }
 
 void pre_order(struct node *root)
