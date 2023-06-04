@@ -16,7 +16,7 @@ void create()
 {
     printf("how many node you have :");
     int a;
-    scanf("%d", &a);
+    scanf("%d", &a); 
     while (a--)
     {
         newnode = (struct node *)malloc(sizeof(struct node));
